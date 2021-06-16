@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+
+}
+
+.logo {
+	display: flex;
+	margin: auto;
+}
+
+.outer {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	overflow: scroll;
+}
+
+.panel {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	width: 5%;
+	transition: all 0.5s ease;
+}
+
+.panel p {
+	margin-top: 100;
+	transform: rotate(90deg);
+	transform-origin: 10;
+	transition: all 1s ease;
+	font-weight: bold;
+}
+
+.home {
+	background: #f5f5dc;
+	z-index: 10;
+	color: black;
+}
+
+.one {
+	color: #f5f5dc;
+	background: #1e93b6;
+	z-index: 75;
+}
+
+.two {
+	color: #f5f5dc;
+	background: #f2a200;
+	z-index: 50;
+}
+
+.three {
+	color: #f5f5dc;
+	background: #92278f;
+	z-index: 25;
+}
+
+.active {
+	width: 85%;
+}
+
+.active p {
+	transform: rotate(0);
+}
+
+.empty {
+	opacity: 0;
+}
+
+.active .empty {
+	opacity: 1;
+}
